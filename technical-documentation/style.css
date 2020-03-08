@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+p {
+  margin: 15px 0;
+}
+
+article {
+  padding: 0 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  border-right: 3px solid #aaa;
+  overflow: scroll;
+}
+
+.nav-header {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 30px;
+}
+
+.nav-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 30px;
+  border-top: 1px solid #aaa;
+}
+
+.nav-link li {
+  margin: 0;
+}
+
+/* Main */
+#main-doc {
+  margin-left: 300px;
+  padding: 20px 40px;
+}
+
+.main-section header {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+code {
+  display: block;
+  background: #eee;
+  padding: 20px;
+  font-size: .8em;
+  margin: 10px;
+  color: #666;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    position: static;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    border-right: none;
+  }
+
+  .nav-link-list {
+    height: 300px;
+    overflow: scroll;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #main-doc {
+    margin: 0;
+  }
+
+  .nav-header {
+    text-align: center;
+  }
+
+}
